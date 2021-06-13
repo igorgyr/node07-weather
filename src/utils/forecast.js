@@ -22,7 +22,7 @@ const forecast = (latitude, longitude, callback) => {
             callback ('Unable to find . Try another search', undefined)
 
         } else {
-            callback (undefined, body.current.weather_descriptions[0] +'. It is ' + body.current.temperature + ' degree. It feels like ' + body.current.feelslike + ' Cloudcover ' + body.weather_descriptions.cloudcover)
+            callback (undefined, body.current.weather_descriptions[0] +'. It is ' + body.current.temperature + ' degree. It feels like ' + body.current.feelslike + ' Time of observation ' + body.current.observation_time)
         
 
             
